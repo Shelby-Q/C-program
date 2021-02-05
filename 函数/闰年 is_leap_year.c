@@ -6,11 +6,11 @@ int is_leap_year(int y)
 {
 	if ((y % 4 == 0 && y % 100 == 0) || (y % 400 == 0))
 	{
-		return 1;
+		return 1; //返回1 就是闰年
 	}
 	else
 	{
-		return 0;
+		return 0; //返回0 就是不闰年
 	
 	}
 }
