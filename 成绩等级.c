@@ -2,7 +2,7 @@
 int main()
 {
 	int score;
-	printf("ÇëÊäÈëÄúµÄ³É¼¨£º");
+	printf("è¯·è¾“å…¥æ‚¨çš„æˆç»©ï¼š");
 	scanf("%d",&score);
 	if(score >= 90)
 	{
