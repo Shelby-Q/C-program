@@ -1,4 +1,4 @@
-//memset函数 初始化函数   memory ：记忆  set：设置
+//memset函数 初始化函数   memory ：记忆  set： 设置
 
 
 #include <stdio.h>
