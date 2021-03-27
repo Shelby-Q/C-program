@@ -20,7 +20,7 @@ int main()
 	return 0;
 }
 
-//指针法
+//通过数组名计算数组元素地址
 
 int main()
 {
