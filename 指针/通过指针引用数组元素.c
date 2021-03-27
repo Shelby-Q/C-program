@@ -49,6 +49,12 @@ int main()
 	{
 		scanf("%d", &a[i]);
 	}
+	/*
+	for (p=a;p<(a+10);p++)
+	{
+		scanf("%d", p);
+	}
+	*/
 	for (p=a;p<(a+10);p++)
 	{
 		printf("%d ", *p);
