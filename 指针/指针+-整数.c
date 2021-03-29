@@ -28,3 +28,13 @@ int main()
 	}
 	return  0;
 }
+
+//指针减去指针
+int main()
+{
+	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	printf("%d\n", arr[9] - arr[0]);// 是所指元素的相对地址
+	
+	return 0;
+
+}
