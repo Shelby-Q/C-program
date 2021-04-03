@@ -31,3 +31,41 @@ int main()
 	return 0;
 	
 }
+
+//2
+void  inv(int* x, int n)
+{
+	int temp, * i, * j, * p, m = (n - 1) / 2;
+	i = x;
+	j = x + n - 1;
+	p = x + m;
+	for (;i <= p; i++, j--)
+	{
+		temp = *i;
+		*i = *j;
+		*j = temp;
+
+	}
+	return;
+}
+
+int main()
+{
+	int i, a[10] = { 3,7,9,11,0,6,7,5,4,2 };
+	printf("The original arry:\n");
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d ", a[i]);								//输出未交换时的函数值
+	}
+	printf("\n");
+	inv(a, 10);										    //调用inv函数  进行交换								  
+	printf("The arrary has been inverted: \n");
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d ", a[i]);								//输出交换后的数组的个元素的值
+	}
+	printf("\n");
+	return 0;
+
+}
+
