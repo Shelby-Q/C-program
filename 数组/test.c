@@ -19,7 +19,7 @@ void Print(int arr[], int sz)
 	printf("\n\n");
 }
 
-void Reverse(int arr[],int sz)
+void Reverse(int arr[],int sz)//交换函数
 {
 	int left = 0;
 	int right = sz - 1;
