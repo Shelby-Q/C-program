@@ -48,7 +48,23 @@ void Reverse(int x[], int n)
 }
 
 	*/
-}
+	//交换方法三
+
+	/*void  Reverse(int* x, int n)
+{
+	int temp, * i, * j, * p, m = (n - 1) / 2;
+	i = x;
+	j = x + n - 1;
+	p = x + m;
+	for (;i <= p; i++, j--)
+	{
+		temp = *i;
+		*i = *j;
+		*j = temp;
+
+	}
+	return;
+}*/
 
 int main()
 {
