@@ -33,7 +33,7 @@ int main()
 }
 
 //2
-void  inv(int* x, int n)
+void  inv(int* x, int n)                                                    //形参x是指针变量
 {
 	int temp, * i, * j, * p, m = (n - 1) / 2;
 	i = x;
