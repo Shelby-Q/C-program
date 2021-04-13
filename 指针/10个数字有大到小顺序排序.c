@@ -1,5 +1,6 @@
 //用指针方法对10个整数有大到小顺序排序
 
+
 void sort(int x[], int n)
 {
 	int i, j, k, t;
@@ -16,6 +17,29 @@ void sort(int x[], int n)
 					t = x[i];
 					x[i] = x[k];
 					x[k] = t;
+				}
+			}
+		}
+	}
+}
+
+//方法2 
+void sort(int * x, int n)  //定义sort方法 是形参x是指针变量
+{
+	int i, j, k, t;
+	for (i = 0; i < n - 1; i++)
+	{
+		k = i;
+		for (j = i + 1; j < n; j++)
+		{
+			if (*(x+j)>*(x+k))   //*(x+j)就是x[j]   *(x+k)就是x[k]
+			{
+				k = j;
+				if (k != i)
+				{
+					t = *(x+i);
+					*(x + i) = *(x + k);
+					*(x + k) = t;
 				}
 			}
 		}
