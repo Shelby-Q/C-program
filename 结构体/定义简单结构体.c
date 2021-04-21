@@ -47,3 +47,34 @@ Result:
 阿旺:3
 阿姨:2
 **/
+
+
+/*
+结构体输出
+*/
+
+struct student//自定义结构体
+{
+    int num;//学号
+    char name[10];//名字
+    float score[3];//三科成绩
+};
+void print(struct student s)//自定义输出函数
+{
+    printf("%d %s\n", s.num, s.name);
+    printf("%.2f %.2f %.2f\n", s.score[0], s.score[1], s.score[2]);
+}
+
+int main()
+{
+    struct student stu;
+    stu.num = 42001;
+    strcpy(stu.name, "MaHuTeng");//字符串赋值函数，将字符串复制到数据项name中
+    stu.score[0] = 98, stu.score[1] = 99, stu.score[2] = 100;
+    print(stu);
+    return 0;
+}
+/**
+42001 MaHuTeng
+98.00 99.00 100.00
+**/
